@@ -1,0 +1,82 @@
+{
+  "regression": {
+    "Linear Regression": {
+      "R2": 0.9648514338378997,
+      "MAE": 2.9792133501735334,
+      "RMSE": 11.13511497135937
+    },
+    "Random Forest": {
+      "R2": 0.9937507966783892,
+      "MAE": 3.224891112018511,
+      "RMSE": 4.695190592859916
+    },
+    "Gradient Boosting": {
+      "R2": 0.9927728669344108,
+      "MAE": 2.621207423474552,
+      "RMSE": 5.049215705389291
+    },
+    "XGBoost": {
+      "R2": 0.9970164895057678,
+      "MAE": 1.685858130455017,
+      "RMSE": 3.2441645833232573
+    },
+    "Deep Learning (ANN)": {
+      "R2": 0.9578084945678711,
+      "MAE": 5.603879451751709,
+      "RMSE": 12.19981974484216
+    }
+  },
+  "classification": {
+    "Logistic Regression": {
+      "Accuracy": 0.944058799510004,
+      "F1_weighted": 0.9460543738115264
+    },
+    "Random Forest": {
+      "Accuracy": 0.9245950728188376,
+      "F1_weighted": 0.9243159999407022
+    },
+    "XGBoost": {
+      "Accuracy": 0.9631141962705866,
+      "F1_weighted": 0.9628255092934097
+    },
+    "Deep Learning (ANN)": {
+      "Accuracy": 0.9658363958078127,
+      "F1_weighted": 0.9679577219266061
+    }
+  },
+  "feature_columns": [
+    "Temperature_C",
+    "Humidity_%",
+    "WindSpeed_mps",
+    "Pressure_hPa",
+    "Rainfall_mm",
+    "Visibility_km",
+    "UV_Index",
+    "PM2_5",
+    "PM10",
+    "NO2",
+    "SO2",
+    "CO",
+    "Ozone",
+    "NH3",
+    "Aerosol_Optical_Depth",
+    "Traffic_Density",
+    "Industrial_Activity",
+    "Green_Cover_%",
+    "Population_Density",
+    "Season_enc",
+    "Country_enc",
+    "City_enc",
+    "Month_sin",
+    "Month_cos",
+    "DayOfYear"
+  ],
+  "target_classes": [
+    "Good",
+    "Hazardous",
+    "Moderate",
+    "Unhealthy",
+    "Unhealthy for Sensitive Groups",
+    "Very Unhealthy"
+  ]
+}
